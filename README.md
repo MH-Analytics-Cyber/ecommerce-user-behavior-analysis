@@ -2,9 +2,17 @@
 
 ## 概要
 
-Google AnalyticsのECサイトデータを使用し、ユーザーの購買行動やサイト内イベントを分析しました。
+BigQueryで公開されている Google Analytics Sample Dataset（Universal Analytics）を使用し、ECサイトにおけるユーザーの購買行動やサイト内イベントを分析しました。
 
 BigQueryでデータの抽出・前処理を行い、Power BIを使用してダッシュボードを作成しています。
+
+### 使用データ
+
+Google Merchandise StoreのUniversal Analyticsデータを収録した、BigQuery Public Datasetのサンプルデータを使用しています。
+
+`bigquery-public-data.google_analytics_sample.ga_sessions_*`
+
+※ Universal Analyticsは現在のGoogle Analytics 4（GA4）とはデータ構造が異なります。
 
 ## 使用技術
 
@@ -129,3 +137,11 @@ B2B購買であれば、社内稟議などによる意思決定のタイムラ�
 - 曜日によるユーザー行動・売上の違い
 
 などを分析することで、購買に至るまでのユーザー行動をより詳細に検証したいと考えています。
+
+## AIツールの利用について
+
+本プロジェクトでは、開発・学習支援としてChatGPTおよびMicrosoft Copilotを使用しました。
+
+主にSQL・DAXの作成支援、エラーの原因調査、実装方法の検討にAIツールを活用しています。生成された内容については、実際のデータで動作を確認し、必要に応じて修正しながら分析を進めました。
+
+分析上の着眼点や仮説の設定、ダッシュボードの構成、分析結果の解釈・考察については、自身で検討しています。
